@@ -6,8 +6,8 @@
     <title>{% block title %}Anime Merch{% endblock %}</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">Anime Merch</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +25,16 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="container">
         {% block content %}
-        <!-- This will be replaced by child templates -->
         {% endblock %}
     </div>
 
-    <!-- Footer -->
     <footer class="footer mt-auto py-3">
         <div class="container">
             <span class="text-muted">© 2024 Anime Merch</span>
         </div>
     </footer>
+    
 </body>
 </html>
